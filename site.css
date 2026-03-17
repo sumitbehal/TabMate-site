@@ -266,6 +266,53 @@ h1 span:last-child,
   color: var(--muted);
 }
 
+.story-what {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-what h2 {
+  max-width: 13ch;
+}
+
+.story-what p {
+  max-width: 34ch;
+}
+
+.story-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.story-metric {
+  min-height: 110px;
+  padding: 16px;
+  border: 1px solid rgba(24, 25, 30, 0.08);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.58)),
+    linear-gradient(135deg, rgba(213, 116, 67, 0.08), transparent 60%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
+}
+
+.story-metric strong {
+  display: block;
+  font-family: var(--display-font);
+  font-size: 32px;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.story-metric span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
 .benefit-stack {
   display: grid;
   gap: 12px;
@@ -286,16 +333,17 @@ h1 span:last-child,
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
 }
 
-.story-card:nth-child(2) {
+.story-benefits {
   display: flex;
   flex-direction: column;
 }
 
-.story-card:nth-child(2) h2 {
-  max-width: 12ch;
+.story-benefits h2 {
+  max-width: 11ch;
+  font-size: clamp(28px, 2.3vw, 36px);
 }
 
-.story-card:nth-child(2) .benefit-stack {
+.story-benefits .benefit-stack {
   margin-top: 22px;
 }
 
@@ -465,6 +513,10 @@ h1 span:last-child,
   .hero,
   .story-grid,
   .assistant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-metrics {
     grid-template-columns: 1fr;
   }
 }
