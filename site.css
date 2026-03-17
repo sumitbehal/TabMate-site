@@ -244,6 +244,7 @@ h1 span:last-child,
 .how-it-works,
 .assistants {
   padding: 24px;
+  height: 100%;
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.76)),
@@ -275,20 +276,17 @@ h1 span:last-child,
 
 .story-what-copy h2 {
   max-width: none;
-  font-size: clamp(32px, 2.35vw, 40px);
-}
-
-.story-what-copy h2 span {
-  display: block;
+  font-size: clamp(28px, 2.1vw, 34px);
+  white-space: nowrap;
 }
 
 .story-what-copy p {
-  max-width: 32ch;
+  max-width: 34ch;
 }
 
 .story-loop-band {
-  margin-top: 22px;
-  padding: 18px;
+  margin-top: 18px;
+  padding: 16px 18px;
   border: 1px solid rgba(24, 25, 30, 0.08);
   border-radius: 24px;
   background:
@@ -310,7 +308,7 @@ h1 span:last-child,
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .story-loop-chip {
@@ -326,13 +324,6 @@ h1 span:last-child,
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.02em;
-}
-
-.story-loop-note {
-  margin-top: 14px;
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--muted);
 }
 
 .benefit-stack {
@@ -362,7 +353,7 @@ h1 span:last-child,
 
 .story-benefits h2 {
   max-width: none;
-  font-size: clamp(18px, 1.2vw, 22px);
+  font-size: clamp(24px, 1.7vw, 30px);
   white-space: nowrap;
 }
 
@@ -400,6 +391,10 @@ h1 span:last-child,
 .how-it-works,
 .assistants {
   margin-top: 20px;
+}
+
+.assistants {
+  margin-top: 34px;
 }
 
 .steps {
